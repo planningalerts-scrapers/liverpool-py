@@ -8,7 +8,7 @@
 lxml==3.4.4
 cssselect==0.9.1
 
-bs4
+beautifulsoup4
 mechanize
 datetime
 dateutil
