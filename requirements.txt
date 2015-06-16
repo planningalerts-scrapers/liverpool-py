@@ -8,9 +8,9 @@
 lxml==3.4.4
 cssselect==0.9.1
 
-beautifulsoup4==4.3.2
+python-beautifulsoup4
 mechanize
 datetime
-python-dateutil==1.4.1
+python-dateutil
 urlparse
 csv
