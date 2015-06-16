@@ -11,6 +11,6 @@ cssselect==0.9.1
 beautifulsoup4
 mechanize
 datetime
-dateutil
+python-dateutil
 urlparse
 csv
