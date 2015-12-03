@@ -1,7 +1,7 @@
 <?php
 ### Liverpool City Council scraper
 
-require 'scraperwiki.php'; 
+require 'scraperwiki.php';
 require 'simple_html_dom.php';
 
 date_default_timezone_set('Australia/Sydney');
@@ -9,12 +9,21 @@ date_default_timezone_set('Australia/Sydney');
 $url_base = "http://eplanning.liverpool.nsw.gov.au";
 $comment_base = "http://www.liverpool.nsw.gov.au/eplanningportal/contact";
 
-# Default to 'thismonth', use MORPH_PERIOD to change to 'lastmonth'
-if (empty(getenv('MORPH_PERIOD'))) {
-    $da_page = $url_base . "/Pages/XC.Track/SearchApplication.aspx?d=thismonth&k=LodgementDate";
-} else {
-    $da_page = $url_base . "/Pages/XC.Track/SearchApplication.aspx?d=" .getenv('MORPH_PERIOD'). "&k=LodgementDate";
-}
+    # Default to 'thisweek', use MORPH_PERIOD to change to 'thismonth' or 'lastmonth' for data recovery
+    switch(getenv('MORPH_PERIOD')) {
+        case 'thismonth' :
+            $period = 'thismonth';
+            break;
+        case 'lastmonth' :
+            $period = 'lastmonth';
+            break;
+        case 'thisweek' :
+        default         :
+            $period = 'thisweek';
+            break;
+    }
+
+$da_page = $url_base . "/Pages/XC.Track/SearchApplication.aspx?d=" .$period. "&k=LodgementDate";
 
 $mainUrl = scraperWiki::scrape("$da_page");
 $dom = new simple_html_dom();
@@ -31,13 +40,13 @@ foreach($dataset as $record) {
     $date_received = explode(' ', $date_received);
     $date_received = explode('/', trim($date_received[1]));
     $date_received = "$date_received[2]-$date_received[1]-$date_received[0]";
-    
+
     # Prep some data before hand
     $desc = explode('<br />', $record->innertext);
     $desc = explode('-', $desc[1], 2);
     $desc = html_entity_decode($desc[1]);
     $desc = trim(preg_replace('/\s+/', ' ', $desc));
-    $desc = ucwords(strtolower($desc));    
+    $desc = ucwords(strtolower($desc));
 
     # Put all information in an array
     $application = array (
