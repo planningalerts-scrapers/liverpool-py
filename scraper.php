@@ -7,7 +7,7 @@ require 'simple_html_dom.php';
 date_default_timezone_set('Australia/Sydney');
 
 $url_base = "http://eplanning.liverpool.nsw.gov.au";
-$comment_base = "http://www.liverpool.nsw.gov.au/eplanningportal/contact";
+$comment_base = "mailto:lcc@liverpool.nsw.gov.au?subject=Development Application Enquiry: ";
 
     # Default to 'thisweek', use MORPH_PERIOD to change to 'thismonth' or 'lastmonth' for data recovery
     switch(getenv('MORPH_PERIOD')) {
@@ -30,33 +30,46 @@ $dom = new simple_html_dom();
 $dom->load($mainUrl);
 
 # Just focus on the a section of the web site
-$dataset = $dom->find("div[id=hiddenresult] div[class=result]");
+$records = $dom->find("div[id=hiddenresult] a");
 
 # The usual, look for the data set and if needed, save it
-foreach($dataset as $record) {
+foreach($records as $record) {
+    # request the actual DA page to get full details
+    $da_page = $url_base . substr($record->href, 5);
+    $da_dom = file_get_html($da_page);
+
     # Slow way to transform the date but it works
-    $date_received = explode('<br />', trim($record->find("div", 0)->innertext));
-    $date_received = preg_replace('/\s+/', ' ', $date_received[0]);
-    $date_received = explode(' ', $date_received);
-    $date_received = explode('/', trim($date_received[1]));
+    $date_received = explode('Lodged: ',trim($da_dom->find('div[class=detailright]', 0)->innertext));
+    $date_received = explode(' ', $date_received[1]);
+    $date_received = explode('/', trim($date_received[0]));
     $date_received = "$date_received[2]-$date_received[1]-$date_received[0]";
 
     # Prep some data before hand
-    $desc = explode('<br />', $record->innertext);
-    $desc = explode('-', $desc[1], 2);
-    $desc = html_entity_decode($desc[1]);
+    $desc = explode('<br />', $da_dom->find('div[class=detailright]', 0)->innertext);
+    $desc = trim(html_entity_decode($desc[0]));
     $desc = trim(preg_replace('/\s+/', ' ', $desc));
     $desc = ucwords(strtolower($desc));
+    
+    # council_reference
+    $council_reference = trim(html_entity_decode($da_dom->find('h2',0)->plaintext));
+    
+    # address
+    $address = trim(html_entity_decode($da_dom->find('div[class=detailright] a', 0)->plaintext));
+    $address = trim(preg_replace('/\s+/', ' ', $address));
+    $address = $address . ', Australia';
 
+    # comment
+    $comment = $comment_base . $council_reference;
+    
     # Put all information in an array
     $application = array (
-        'council_reference' => trim($record->find("a",0)->plaintext),
-        'address' => trim(html_entity_decode($record->find("strong",0)->plaintext)) . "  AUSTRALIA",
-        'description' => $desc,
-        'info_url' => $url_base . substr($record->find("a",0)->href, 5),
-        'comment_url' => $comment_base,
-        'date_scraped' => date('Y-m-d'),
-        'date_received' => date('Y-m-d', strtotime($date_received))
+        'council_reference' => $council_reference,
+        'address'           => $address,
+        'description'       => $desc,
+        'info_url'          => $da_page,
+        'comment_url'       => $comment,
+        'date_scraped'      => date('Y-m-d'),
+        'date_received'     => date('Y-m-d', strtotime($date_received))
     );
 
     # Check if record exist, if not, INSERT, else do nothing
