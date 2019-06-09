@@ -35,19 +35,12 @@
   address: 479 CAMPBELLTOWN ROAD DENHAM COURT NSW 2565
   date_scraped: '2019-05-15'
   info_url: https://eplanning.liverpool.nsw.gov.au/Pages/XC.Track/SearchApplication.aspx?id=381137
-- council_reference: CCB-270/2019
-  description: Construction of a one bedroom, secondary dwelling.
-  date_received: '2019-05-24'
-  address: 125 MADDECKS AVENUE MOOREBANK NSW 2170
+- council_reference: BC-83/2019
+  description: Unauthorised Works - Conversion of Carport to enclosed Garage
+  date_received: '2019-06-07'
+  address: 4 STOCKTON AVENUE MOOREBANK NSW 2170
   date_scraped: '2019-05-15'
-  info_url: https://eplanning.liverpool.nsw.gov.au/Pages/XC.Track/SearchApplication.aspx?id=380352
-- council_reference: CCB-271/2019
-  description: Demolition of all Structures and Construction of Two (2) double storey
-    dwellings.
-  date_received: '2019-05-24'
-  address: 3 MACDONALD AVENUE LURNEA NSW 2170
-  date_scraped: '2019-05-15'
-  info_url: https://eplanning.liverpool.nsw.gov.au/Pages/XC.Track/SearchApplication.aspx?id=380353
+  info_url: https://eplanning.liverpool.nsw.gov.au/Pages/XC.Track/SearchApplication.aspx?id=381378
 - council_reference: CCB-272/2019
   description: The construction of a two storey dwelling and double garage/ studio
   date_received: '2019-05-28'
@@ -369,6 +362,33 @@
   address: 87 DIAMOND HILL CIRCUIT EDMONDSON PARK NSW 2174
   date_scraped: '2019-05-15'
   info_url: https://eplanning.liverpool.nsw.gov.au/Pages/XC.Track/SearchApplication.aspx?id=381287
+- council_reference: CCB-323/2019
+  description: Construction of two storey dwelling with detached garage  and studio
+    above
+  date_received: '2019-06-07'
+  address: LOT 102 ANDALUSIAN STREET AUSTRAL NSW 2179
+  date_scraped: '2019-05-15'
+  info_url: https://eplanning.liverpool.nsw.gov.au/Pages/XC.Track/SearchApplication.aspx?id=381338
+- council_reference: CCB-324/2019
+  description: The construction of a two storey dwelling on proposed Lot 532 Broome
+    Road in Lot 14 DP1239712
+  date_received: '2019-06-07'
+  address: LOT 14 CAMDEN VALLEY WAY EDMONDSON PARK NSW 2174
+  date_scraped: '2019-05-15'
+  info_url: https://eplanning.liverpool.nsw.gov.au/Pages/XC.Track/SearchApplication.aspx?id=381355
+- council_reference: CCB-325/2019
+  description: Construction of a Single Storey Dwelling SEPPS (2008)
+  date_received: '2019-06-07'
+  address: LOT 55 WEDIN STREET AUSTRAL NSW 2179
+  date_scraped: '2019-05-15'
+  info_url: https://eplanning.liverpool.nsw.gov.au/Pages/XC.Track/SearchApplication.aspx?id=381344
+- council_reference: CCB-326/2019
+  description: The construction of a two storey dwelling on Proposed Lot 531 Broome
+    Road, in Lot 14 DP 1239712.
+  date_received: '2019-06-07'
+  address: LOT 14 CAMDEN VALLEY WAY EDMONDSON PARK NSW 2174
+  date_scraped: '2019-05-15'
+  info_url: https://eplanning.liverpool.nsw.gov.au/Pages/XC.Track/SearchApplication.aspx?id=381366
 - council_reference: CCB-652/2018/A
   description: Amendment -Two storey detached dwelling with attached single garage
   date_received: '2019-06-04'
@@ -397,12 +417,6 @@
   address: 75 SEVENTEENTH AVE EAST MIDDLETON GRANGE NSW 2171
   date_scraped: '2019-05-15'
   info_url: https://eplanning.liverpool.nsw.gov.au/Pages/XC.Track/SearchApplication.aspx?id=381114
-- council_reference: CCE-12/2019
-  description: The construction of a detached two storey dwelling with attached garage
-  date_received: '2019-06-07'
-  address: LOT 1028 MULUMULUNG STREET AUSTRAL NSW 2179
-  date_scraped: '2019-05-15'
-  info_url: https://eplanning.liverpool.nsw.gov.au/Pages/XC.Track/SearchApplication.aspx?id=381275
 - council_reference: CCE-13/2019
   description: Awning to an existing dwelling.
   date_received: '2019-06-07'
@@ -437,18 +451,6 @@
   address: 109 JEDDA ROAD PRESTONS NSW 2170
   date_scraped: '2019-05-15'
   info_url: https://eplanning.liverpool.nsw.gov.au/Pages/XC.Track/SearchApplication.aspx?id=380301
-- council_reference: CD-364/2019
-  description: Construction of a two bedroom, Secondary Dwelling SEPPS (2008)
-  date_received: '2019-05-24'
-  address: 10 GWYNNE STREET ASHCROFT NSW 2168
-  date_scraped: '2019-05-15'
-  info_url: https://eplanning.liverpool.nsw.gov.au/Pages/XC.Track/SearchApplication.aspx?id=380366
-- council_reference: CD-365/2019
-  description: Single Storey Dwelling with attached Single Garage
-  date_received: '2019-05-24'
-  address: LOT 271 EDMONDSON AVENUE AUSTRAL NSW 2179
-  date_scraped: '2019-05-15'
-  info_url: https://eplanning.liverpool.nsw.gov.au/Pages/XC.Track/SearchApplication.aspx?id=380383
 - council_reference: CD-366/2019
   description: Construction of a Secondary Dwelling & Removal of Existing Garage.
     SEPPS (2008)
@@ -1035,6 +1037,19 @@
   address: 12 KELLER PLACE CASULA NSW 2170
   date_scraped: '2019-05-15'
   info_url: https://eplanning.liverpool.nsw.gov.au/Pages/XC.Track/SearchApplication.aspx?id=381318
+- council_reference: CD-462/2019
+  description: two storey dwelling with attached garage
+  date_received: '2019-06-07'
+  address: 10 ARNOTT AVENUE MIDDLETON GRANGE NSW 2171
+  date_scraped: '2019-05-15'
+  info_url: https://eplanning.liverpool.nsw.gov.au/Pages/XC.Track/SearchApplication.aspx?id=381329
+- council_reference: CD-464/2019
+  description: Demolition of Existing Structures and Construction of Secondary Dwelling
+    with Attached Garage. SEPPS (2008)
+  date_received: '2019-06-07'
+  address: 11 DORAN AVENUE LURNEA NSW 2170
+  date_scraped: '2019-05-15'
+  info_url: https://eplanning.liverpool.nsw.gov.au/Pages/XC.Track/SearchApplication.aspx?id=381350
 - council_reference: CD-694/2018/A
   description: Modification - Single storey dwelling with an attached secondary dwelling
     SEPPS (2008)
@@ -1074,20 +1089,6 @@
   address: 17 BIGGE STREET LIVERPOOL NSW 2170
   date_scraped: '2019-05-15'
   info_url: https://eplanning.liverpool.nsw.gov.au/Pages/XC.Track/SearchApplication.aspx?id=380908
-- council_reference: DA-307/2019
-  description: The demolition of existing structures, the construction of a single
-    storey dwelling and an in-ground swimming pool.
-  date_received: '2019-05-24'
-  address: 11 MIVO STREET HOLSWORTHY NSW 2173
-  date_scraped: '2019-05-15'
-  info_url: https://eplanning.liverpool.nsw.gov.au/Pages/XC.Track/SearchApplication.aspx?id=380356
-- council_reference: DA-308/2019
-  description: The construction of a two storey dwelling and an in-ground swimming
-    pool.
-  date_received: '2019-05-24'
-  address: LOT 128 TOKYO ROAD AUSTRAL NSW 2179
-  date_scraped: '2019-05-15'
-  info_url: https://eplanning.liverpool.nsw.gov.au/Pages/XC.Track/SearchApplication.aspx?id=380360
 - council_reference: DA-309/2019
   description: The construction of a detached secondary dwelling under the State Environmental
     Planning Policy (Affordable Rental Housing) 2009
@@ -1333,6 +1334,39 @@
   address: 43 BRAIDWOOD DRIVE PRESTONS NSW 2170
   date_scraped: '2019-05-15'
   info_url: https://eplanning.liverpool.nsw.gov.au/Pages/XC.Track/SearchApplication.aspx?id=381312
+- council_reference: DA-349/2019
+  description: Subdivision along the boundary lines to create five lot from the existing
+    three lots.
+  date_received: '2019-06-07'
+  address: 15 RYNAN AVENUE EDMONDSON PARK NSW 2174
+  date_scraped: '2019-05-15'
+  info_url: https://eplanning.liverpool.nsw.gov.au/Pages/XC.Track/SearchApplication.aspx?id=381326
+- council_reference: DA-350/2019
+  description: The construction of a two storey dwelling on proposed Lot 532 Broome
+    Road Edmondson Parlk
+  date_received: '2019-06-07'
+  address: LOT 14 CAMDEN VALLEY WAY EDMONDSON PARK NSW 2174
+  date_scraped: '2019-05-15'
+  info_url: https://eplanning.liverpool.nsw.gov.au/Pages/XC.Track/SearchApplication.aspx?id=381348
+- council_reference: DA-351/2019
+  description: The construction of a secondary dwelling
+  date_received: '2019-06-07'
+  address: 14 DUCK PLACE HINCHINBROOK NSW 2168
+  date_scraped: '2019-05-15'
+  info_url: https://eplanning.liverpool.nsw.gov.au/Pages/XC.Track/SearchApplication.aspx?id=381349
+- council_reference: DA-352/2019
+  description: The construction of a two storey dwelling on Proposed Lot 531 Broome
+    Road Edmondson Park
+  date_received: '2019-06-07'
+  address: LOT 14 CAMDEN VALLEY WAY EDMONDSON PARK NSW 2174
+  date_scraped: '2019-05-15'
+  info_url: https://eplanning.liverpool.nsw.gov.au/Pages/XC.Track/SearchApplication.aspx?id=381363
+- council_reference: DA-353/2019
+  description: Detached Two Storey Dwelling and Attached Garage
+  date_received: '2019-06-07'
+  address: LOT 243 EDMONDSON AVENUE AUSTRAL NSW 2179
+  date_scraped: '2019-05-15'
+  info_url: https://eplanning.liverpool.nsw.gov.au/Pages/XC.Track/SearchApplication.aspx?id=381377
 - council_reference: DA-728/2018/A
   description: Modification to Development Consent DA-728/2018 under Section 4.55
     of the Environmental Planning and Assessment Act 1979, to alter location and capacity
@@ -1356,19 +1390,6 @@
   address: 99 GREENDALE ROAD GREENDALE NSW 2745
   date_scraped: '2019-05-15'
   info_url: https://eplanning.liverpool.nsw.gov.au/Pages/XC.Track/SearchApplication.aspx?id=380776
-- council_reference: SC-58/2019
-  description: Demolition of Existing Structures and subdivision of existing allotment
-    into 28 torrens tittle lots, inlcuding road construction and stormwater works
-  date_received: '2019-05-24'
-  address: 80 SEVENTH AVENUE AUSTRAL NSW 2179
-  date_scraped: '2019-05-15'
-  info_url: https://eplanning.liverpool.nsw.gov.au/Pages/XC.Track/SearchApplication.aspx?id=380380
-- council_reference: SC-59/2019
-  description: Two lot Torrens Title subdivision
-  date_received: '2019-05-24'
-  address: 1 STANWELL CRESCENT ASHCROFT NSW 2168
-  date_scraped: '2019-05-15'
-  info_url: https://eplanning.liverpool.nsw.gov.au/Pages/XC.Track/SearchApplication.aspx?id=380408
 - council_reference: SC-60/2019
   description: two lot torrens tile subdivision
   date_received: '2019-05-30'
